@@ -13,8 +13,9 @@ const forecast = (latitude,longitude,callback)=>{
     }
 
     else {
-
-        callback(undefined,body.daily.data[0].summary +' It is currently ' + body.currently.temperature+' degress out. There is a '+ body.currently.precipProbability + '% Chance of rain')
+ 
+        console.log(body.daily.data[0])
+        callback(undefined,body.daily.data[0].summary +' It is currently ' + body.currently.temperature+' degress out. High is ' +body.daily.data[0].temperatureHigh + ' With a low of '+body.daily.data[0].temperatureLow +'. There is a '+ body.currently.precipProbability + '% Chance of rain')
     }
     })
        
