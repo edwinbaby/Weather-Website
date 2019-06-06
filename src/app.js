@@ -38,7 +38,7 @@ app.get('/help',(req,res)=>{
     res.render('help',{
        label:'This is some helpful text',
        title:'Help',
-       name:'Edwin'
+       name:'Edwin Baby'
     })
 })
 
